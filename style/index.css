@@ -1,5 +1,19 @@
-/*Navigation*/
-
+/*-----*/
+#side-container ul {
+  list-style: none;
+}
+#side-container ul li{
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.8s ease;
+}
+#side-container ul li a{
+  font-size: 1rem;
+}
+#side-container ul li:hover{
+  background-color: #086f01;
+}
+/*-----*/
 /*HERO SECTION*/
 .hero-sect{
   min-height: 620px;
@@ -7,6 +21,9 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+.name-desc{
+  color: #086f01;
 }
 .hero-sect .hero{
   display: flex;
@@ -159,6 +176,7 @@
 .skills ul > li{
   margin-bottom: 30px;
 }
+
 .achievement-desc{
   display: flex;
   flex-direction: row;
@@ -182,6 +200,10 @@
 }
 .achievement-desc div:nth-child(2){
   min-width: 200px;
+}
+.education ul li h4,
+.awards ul li h4{
+  font-size: 1rem;
 }
 h4 span:nth-child(2){
   font-size: 1.1rem;
@@ -240,9 +262,6 @@ footer{
 }
 
 @media screen and (max-width: 780px) {
-  nav ul{
-    display: none;
-  }
   header{
     margin-bottom: 75px;
   }
@@ -257,7 +276,6 @@ footer{
   .line{
     display: none;
   }
-  
   .hero-desc h4{
     writing-mode:horizontal-tb;
   }

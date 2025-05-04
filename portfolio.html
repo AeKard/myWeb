@@ -6,6 +6,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/portfolio.css">
+    <link rel="icon" type="image/png" href="./icon/logo.svg">
+
 </head>
 <body>
     <main>
@@ -15,15 +17,27 @@
                     <img src="./icon/logo.svg" alt="">
                     <h1>Developer</h1>
                 </div>
+                <div class="burger" onclick="toggleMenu()">☰</div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./index.html#about-me">About me</a></li>
                     <li><a href="./index.html#education">Education</a></li>
                     <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Experience</a></li>
+                    <li><a href="./experience.html">Experience</a></li>
                     <li><a href="./contacts.html">Contact me</a></li>
                 </ul>
             </nav>
+            <div id="side-container">
+                <div class="burger-x" onclick="toggleMenu()">X</div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./experience.html">Experience</a></li>
+                    <li><a href="./contacts.html">Contact me</a></li>
+                </ul>
+            </div>
         </header>
         <section class="info">
             <div>
@@ -41,20 +55,18 @@
                     <img src="./img/lotopy.png" alt="">
                 </div>
                 <div>
-                    
+                    <h2>Coding in my Spare Time</h2>
+                    <p>I create automation for my work most of the time and I usually used python for it</p>
                 </div>
-                <h2>Coding in my Spare Time</h2>
-                <p>I create automation for my work most of the time and I usually used python for it</p>
             </div>
             <div class="container container2">
                 <div>
                     <img src="./img/blender.png" alt="">
                 </div>
                 <div>
-                    
+                    <h2>3D and 2D Works</h2>
+                    <p>I tried learning 3D and 2D animation</p>
                 </div>
-                <h2>3D and 2D Works</h2>
-                <p>I tried learning 3D and 2D animation</p>
             </div>
             <div class="container container3">
                 <div>
@@ -63,27 +75,39 @@
                     </video>
                 </div>
                 <div>
-                    
+                    <h2>Godot Game Engine</h2>
+                    <p>I tried creating a game using Godot</p>
                 </div>
-                <h2>Godot Game Engine</h2>
-                <p>I tried creating a game using Godot</p>
             </div>
             <div class="container container4">
                 <div>
-                    <div>
-                        
-                    </div>
-                    <video src="./vid/sprite.mp4">
+                    <video src="./vid/sprite.mp4" autoplay muted loop playsinline>
                         video unavailable!
                     </video>
                 </div>
                 <div>
-                    
+                    <h2>PyGame</h2>
+                    <p>I tried creating sprites for my 2d game using PyGame</p>
                 </div>
-                <h2>PyGame using Python</h2>
-                <p>I tried creating sprites for my 2d game using PyGame</p>
             </div>
-            <div class="container container5"></div>
+            <div class="container container5">
+                <div>
+                    <video src="./vid/draw.mp4" autoplay muted loop playsinline>
+                        video unavailable!
+                    </video>
+                </div>
+                <div>
+                    <h2>Drawing</h2>
+                    <p>I draw a lot in my spare time, before I started coding</p>
+                </div>
+            </div>
+        </section>
+        <section class="convince-section">
+            <div>
+                <h1>Lets work on you project Today</h1>
+                <p>Hire a skilled Developer with years of experience in Programming. <br>Reach out to discuss your vision today.</p>
+                <button onclick="window.location.href='./contacts.html'">Get Started</button>
+            </div>
         </section>
         <footer>
             <div class="footer-content">
@@ -115,5 +139,6 @@
             </div>
         </footer>
     </main>
+    <script src="./js/nav.js"></script>
 </body>
 </html>

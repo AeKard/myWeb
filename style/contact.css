@@ -60,16 +60,16 @@
 }
 
 .form-section > *{
-  color: #171717;
+  color: #ffffff;
 }
 
 .form-section{
   text-align: center;
-  max-width: 35rem;
+  min-width: 30rem;
   min-height: 30rem;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #1c1c1c;
   padding: 20px 60px;
   border-radius: 10px;
   margin: 10px;
@@ -87,8 +87,11 @@
   margin-bottom: 20px;
   padding: 10px
 }
+.form-section form input, textarea{
+  background-color: transparent;
+}
 .form-section form input::placeholder, textarea::placeholder, input, textarea{
-  color:#171717;
+  color:white;
 }
 .form-section form button{
   padding: 10px;
@@ -97,7 +100,7 @@
   border-radius: 10px;
   cursor: pointer;
   border: 0 none;
-  box-shadow:  0 0 8px #6f1301;
+  box-shadow:  0 0 8px #086f01;
 }
 .form-section form button:hover{
   animation: borderAnimation 4s infinite ease-in-out;
@@ -109,11 +112,11 @@
   right 2px 2px 5px
 */
 @keyframes borderAnimation {
-  0%{box-shadow:  -2px 2px 8px #6f1301;}
-  25%{box-shadow:  -2px -2px 8px #6f1301;}
-  50%{box-shadow:  2px -2px 8px #6f1301;}
-  75%{box-shadow:  2px 2px 8px #6f1301;}
-  100%{box-shadow:  -2px 2px 8px #6f1301;}
+  0%{box-shadow:  -2px 2px 8px #086f01;}
+  25%{box-shadow:  -2px -2px 8px #086f01;}
+  50%{box-shadow:  2px -2px 8px #086f01;}
+  75%{box-shadow:  2px 2px 8px #086f01;}
+  100%{box-shadow:  -2px 2px 8px #086f01;}
 }
 /*Footer*/
 footer{

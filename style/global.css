@@ -17,6 +17,9 @@
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
+.burger{
+    display: none;
+}
 
 body{
     background-color: #0e0e0e;
@@ -88,11 +91,6 @@ nav{
     font-weight:bold;
 }
 
-/* @media screen and (max-width: 780px) {
-    html{
-        font-size: 45.5%;
-    }
-} */
 
 nav ul li a::before,
 nav ul li a::after {
@@ -127,3 +125,54 @@ nav ul li a:hover::after {
     opacity: 1;
     transform: translateX(0);
 }
+
+/*-------------*/
+#side-container {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #121212f8;
+    transition: left 0.3s ease;
+    padding-top: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+#side-container *{
+    padding: 10px;
+}
+.burger-x{
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#side-container ul {
+    list-style: none;
+}
+#side-container ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.8s ease;
+}
+#side-container ul li a{
+    font-size: 1rem;
+}
+#side-container ul li:hover{
+    background-color: #086f01;
+}
+
+/*For burger*/
+@media screen and (max-width: 900px) {
+    nav ul{
+      display: none;
+    }
+    .burger{
+      display: block;
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  }
