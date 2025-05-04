@@ -1,0 +1,188 @@
+
+.info{
+  min-height: 100px;
+  background-color: #171717;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info > *{
+  margin: 40px 10px;
+}
+.info div > h1{
+  font-size: 3.5rem;
+  margin-bottom: 5px;
+}
+.info div > p{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.contact-log{
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.side-container{
+  max-width: 600px;
+  margin: 10px;
+}
+.side-container > h1, h4, p {
+  font-size: 1.5rem;
+}
+.step-process{
+  padding: 20px 0 20px 0;
+}
+.step-process li div h4{
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.step-process li{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.step-process li div:nth-child(1) { 
+  text-align: center;
+  min-width: 40px;  
+  margin-right: 20px;
+}
+
+.step-process li h1 span{
+  color: rgb(93, 154, 1);
+  font-size: 3rem;
+}
+
+.form-section > *{
+  color: #171717;
+}
+
+.form-section{
+  text-align: center;
+  max-width: 35rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.form-section h1{
+  margin: 20px 0 40px 0;
+}
+.form-section form{
+  display: flex;
+  flex-direction: column;
+}
+.form-section form input, textarea{
+  border-radius: 10px;
+  border: 1px solid;
+  margin-bottom: 20px;
+  padding: 10px
+}
+.form-section form input::placeholder, textarea::placeholder, input, textarea{
+  color:#171717;
+}
+.form-section form button{
+  padding: 10px;
+  color: white;
+  background-color: #171717;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0 none;
+  box-shadow:  0 0 8px #6f1301;
+}
+.form-section form button:hover{
+  animation: borderAnimation 4s infinite ease-in-out;
+}
+/*
+  down -2px 2px 5px
+  left -2px -2px 5px
+  up 2px -2px 5px
+  right 2px 2px 5px
+*/
+@keyframes borderAnimation {
+  0%{box-shadow:  -2px 2px 8px #6f1301;}
+  25%{box-shadow:  -2px -2px 8px #6f1301;}
+  50%{box-shadow:  2px -2px 8px #6f1301;}
+  75%{box-shadow:  2px 2px 8px #6f1301;}
+  100%{box-shadow:  -2px 2px 8px #6f1301;}
+}
+/*Footer*/
+footer{
+  background-color: #171717;
+  height: 100%;
+}
+.footer-content{
+  margin: 40px;
+}
+.upper-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.upper-footer > *{
+  margin: 20px;
+} 
+.hire-me h3, h4{
+  margin-bottom: 10px;
+} 
+.hire-me > h4{
+  font-size: 4rem;
+} 
+.hire-me ul{
+  display: flex;
+} 
+.hire-me ul li{
+  display: flex;
+  margin-right: 20px;
+} 
+
+.info-footer h4{
+  margin-bottom: 10px;
+} 
+.info-footer ul li{
+  min-width: 200px;
+  margin-bottom: 10px;
+} 
+.footer-content div:nth-child(3){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+@media screen and (max-width: 800px){
+  nav ul{
+    display: none;
+  }
+  
+  .info{
+    text-align: center;
+  }
+  .info div{
+    margin: 20px;
+  }
+  .contact-log{
+    flex-direction: column;
+    margin: 20px;
+  }
+  .side-container{
+    margin: 20px 20px 40px 20px;
+  }
+  .form-section{
+    margin: 10px;
+    min-width: 10rem;
+    min-height: 20rem;
+  }
+  .upper-footer{
+    flex-direction: column;
+  }
+}

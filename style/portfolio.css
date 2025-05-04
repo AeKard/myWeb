@@ -1,0 +1,90 @@
+.info{
+    min-height: 100px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info > *{
+    margin: 40px auto;
+}
+.info div > h1{
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+}
+.info div > p{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.wrapper{
+    max-width: 100%;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container div{
+    max-width: 100%;
+}
+.container div img{
+    width: 100%;
+    width: 500px;
+    height: auto;
+    display: block;
+}
+.container div video {
+    width: 100%;
+    max-width: 500px; /* Same as the images */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Optional: keeps aspect ratio without overflow */
+}
+
+/*footer*/
+footer{
+    background-color: #171717;
+    height: 100%;
+  }
+  .footer-content{
+    margin: 40px;
+  }
+  .upper-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+  .upper-footer > *{
+    margin: 20px;
+  } 
+  .hire-me h3, h4{
+    margin-bottom: 10px;
+  } 
+  .hire-me > h4{
+    font-size: 4rem;
+  } 
+  .hire-me ul{
+    display: flex;
+  } 
+  .hire-me ul li{
+    display: flex;
+    margin-right: 20px;
+  } 
+  
+  .info-footer h4{
+    margin-bottom: 10px;
+  } 
+  .info-footer ul li{
+    min-width: 200px;
+    margin-bottom: 10px;
+  } 
+  .footer-content div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }

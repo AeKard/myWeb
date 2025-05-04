@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* variable weight range */
+    font-style: normal;
+}
+
+*
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+  padding: 0;
+  margin: 0;
+
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #0e0e0e;
+}
+
+html{
+    font-size: 65.15%;
+}
+/*for Title or headers*/
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+h4,
+h3,
+a{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+main{
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+/*GLOBAL NAV*/
+header{
+    margin: 40px 10px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+nav{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    padding-left: 10px;
+    font-weight:bold;
+}
+
+/* @media screen and (max-width: 780px) {
+    html{
+        font-size: 45.5%;
+    }
+} */
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+nav ul li a::before {
+    content: '[';
+    left: 0;
+    transform: translateX(0);
+}
+
+nav ul li a::after {
+    content: ']';
+    right: 0;
+    transform: translateX(0);
+}
+
+nav ul li a:hover::before {
+    left: -10px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+nav ul li a:hover::after {
+    right: -10px;
+    opacity: 1;
+    transform: translateX(0);
+}
