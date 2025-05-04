@@ -154,12 +154,13 @@ nav ul li a:hover::after {
     list-style: none;
 }
 #side-container ul li{
-    padding: 10px;
-    margin-bottom: 10px;
     transition: all 0.8s ease;
 }
 #side-container ul li a{
+    padding: 0;
     font-size: 1rem;
+    display: flex;
+    width: 100%;
 }
 #side-container ul li:hover{
     background-color: #086f01;

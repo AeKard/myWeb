@@ -19,6 +19,29 @@
     margin-bottom: 5px;
   }
   
+.experience{
+  margin:80px;
+  position: relative;
+  margin-left: 60px;
+  border-left: 2px solid #086f01;
+}
+.timeline-container{
+  margin: 20px ;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -28px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  background: #086f01;
+  border-radius: 50%;
+}
 
 /*footer*/
 
@@ -65,3 +88,19 @@ footer{
     justify-content: space-between;
     margin: 10px;
   }
+
+  @media screen and (max-width: 800px){
+
+    .info{
+      text-align: center;
+    }
+    .info div{
+      margin: 20px;
+    }
+    .experience{
+      margin-left: 25px;
+    }
+    .upper-footer{
+      flex-direction: column;
+    }
+}
