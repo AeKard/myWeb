@@ -180,6 +180,9 @@ footer{
     display: flex;
     margin-right: 20px;
   } 
+  .hire-me ul li{
+    text-decoration:underline;
+  } 
   
   .info-footer h4{
     margin-bottom: 10px;
@@ -233,6 +236,9 @@ footer{
 
 .info div:nth-child(1){
   text-align: center;
+}
+.info-nav{
+  text-decoration: underline;
 }
 /*For burger*/
 @media screen and (max-width: 900px) {
