@@ -1,24 +1,3 @@
-.info{
-  min-height: 100px;
-  background-color: #171717;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.info > *{
-  margin: 40px auto;
-}
-.info div > h1{
-  font-size: 3.5rem;
-  margin-bottom: 5px;
-}
-.info div > p{
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
 .wrapper{
   max-width: 100%;
   overflow: hidden;
@@ -27,6 +6,9 @@
   display: flex;
   flex-direction: row;
   margin: 40px;
+}
+.container:nth-child(even){
+  flex-direction: row-reverse;
 }
 .container div h2{
   border-bottom:1px dashed;
@@ -40,19 +22,9 @@
   margin: 20px;
   margin-top: 40px;
 }
-.container div img{
+.container div img,
+.container div video{
   width: 100%;
-  max-width: 500px;
-  min-width: 150px;
-  height: auto;
-  display: block;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #086f01;
-}
-.container div video {
-  width: 100%;
-  max-width: 500px; 
   min-width: 150px;
   height: auto;
   display: block;
@@ -60,6 +32,7 @@
   border-radius: 10px;
   box-shadow: 0 0 20px #086f01;
 }
+
 .container div video, 
 .container div img{
   transition: transform 0.8s ease;
@@ -95,10 +68,10 @@
   animation: borderAnimation 4s infinite ease-in-out;
 }
 /*
-  down -2px 2px 5px
-  left -2px -2px 5px
-  up 2px -2px 5px
-  right 2px 2px 5px
+down -2px 2px 5px
+left -2px -2px 5px
+up 2px -2px 5px
+right 2px 2px 5px
 */
 @keyframes borderAnimation {
   0%{box-shadow:  -2px 2px 8px #086f01;}
@@ -107,51 +80,11 @@
   75%{box-shadow:  2px 2px 8px #086f01;}
   100%{box-shadow:  -2px 2px 8px #086f01;}
 }
-
-/*footer*/
-footer{
-  /* background-color: #171717; */
-  height: 100%;
+/***/
+.container div{
+  width: 50%;
 }
-.footer-content{
-  margin: 40px;
-}
-.upper-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 20px auto;
-}
-.upper-footer > *{
-  margin: 20px;
-} 
-.hire-me h3, h4{
-  margin-bottom: 10px;
-} 
-.hire-me > h4{
-  font-size: 4rem;
-} 
-.hire-me ul{
-  display: flex;
-} 
-.hire-me ul li{
-  display: flex;
-  margin-right: 20px;
-} 
-
-.info-footer h4{
-  margin-bottom: 10px;
-} 
-.info-footer ul li{
-  min-width: 200px;
-  margin-bottom: 10px;
-} 
-.footer-content div:nth-child(3){
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
-}
+/***/
 
 @media screen and (max-width: 800px) {
   
@@ -159,6 +92,7 @@ footer{
     flex-wrap:wrap-reverse;
     text-align: center;
     justify-content: center;
+    margin: 0;
   }
   nav ul{
     display: none;
@@ -166,13 +100,7 @@ footer{
   .burger{
     display:contents;
   }
-
-  .info{
-    text-align: center;
-  }
-  .info div{
-    margin: 20px;
-  }
+  
   .contact-log{
     flex-direction: column;
     margin: 20px;

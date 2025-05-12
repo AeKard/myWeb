@@ -12,129 +12,145 @@
 <body>
     <main>
         <header>
-            <nav>
-                <div class="logo">
-                    <img src="./icon/logo.svg" alt="">
-                    <h1>Developer</h1>
-                </div>
-                <div class="burger" onclick="toggleMenu()">☰</div>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html#about-me">About me</a></li>
-                    <li><a href="./index.html#education">Education</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="./experience.html">Experience</a></li>
-                    <li><a href="./contacts.html">Contact me</a></li>
-                </ul>
-            </nav>
+            <div class="containers">
+                <nav>
+                    <div class="logo" id="logo_button">
+                        <img src="./icon/logo.svg" alt="">
+                        <h1>Developer</h1>
+                    </div>
+                    <div class="burger" onclick="toggleMenu()">☰</div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutme.html">About me</a></li>
+                        <li><a href="./education.html">Education</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./experience.html">Experience</a></li>
+                        <li><a href="./contacts.html">Contact me</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div id="side-container">
                 <div class="burger-x" onclick="toggleMenu()">X</div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about-me">About me</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="./aboutme.html">About me</a></li>
+                    <li><a href="./education.html">Education</a></li>
                     <li><a href="./portfolio.html">Portfolio</a></li>
                     <li><a href="./experience.html">Experience</a></li>
                     <li><a href="./contacts.html">Contact me</a></li>
                 </ul>
             </div>
         </header>
-        <section class="info">
-            <div>
-                <h1>Portfolio</h1>
-                <p>Home <span> &gt; </span> Portfolio</p>
-            </div>
-            <div>
-                <p>I don't have a notable project just yet that I am proud of <br>
-                    but I have several project all through out the years</p>
-            </div>
-        </section>
-        <section class="wrapper">
-            <div class="container container1">
-                <div>
-                    <img src="./img/lotopy.png" alt="">
-                </div>
-                <div>
-                    <h2>Coding in my Spare Time</h2>
-                    <p>I create automation for my work most of the time and I usually used python for it</p>
-                </div>
-            </div>
-            <div class="container container2">
-                <div>
-                    <img src="./img/blender.png" alt="">
-                </div>
-                <div>
-                    <h2>3D and 2D Works</h2>
-                    <p>I tried learning 3D and 2D animation</p>
-                </div>
-            </div>
-            <div class="container container3">
-                <div>
-                    <video src="./vid/twodgame.mp4" autoplay muted loop playsinline>
-                        video unavailable!
-                    </video>
-                </div>
-                <div>
-                    <h2>Godot Game Engine</h2>
-                    <p>I tried creating a game using Godot</p>
-                </div>
-            </div>
-            <div class="container container4">
-                <div>
-                    <video src="./vid/sprite.mp4" autoplay muted loop playsinline>
-                        video unavailable!
-                    </video>
-                </div>
-                <div>
-                    <h2>PyGame</h2>
-                    <p>I tried creating sprites for my 2d game using PyGame</p>
-                </div>
-            </div>
-            <div class="container container5">
-                <div>
-                    <video src="./vid/draw.mp4" autoplay muted loop playsinline>
-                        video unavailable!
-                    </video>
-                </div>
-                <div>
-                    <h2>Drawing</h2>
-                    <p>I draw a lot in my spare time, before I started coding</p>
+        <section class="nav-container">
+            <div class="containers">
+                <div class="info">
+                    <div>
+                        <h1>Portfolio</h1>
+                        <p>Home <span> &gt; </span> Portfolio</p>
+                    </div>
+                    <div>
+                        <p>I don't have a notable project just yet that I am proud of <br>
+                            but I have several project all through out the years</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="convince-section">
-            <div>
-                <h1>Lets work on you project Today</h1>
-                <p>Hire a skilled Developer with years of experience in Programming. <br>Reach out to discuss your vision today.</p>
-                <button onclick="window.location.href='./contacts.html'">Get Started</button>
+        <section>
+            <div class="containers">
+                <div class="wrapper">
+                    <div class="container container1">
+                        <div>
+                            <img src="./img/lotopy.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Coding in my Spare Time</h2>
+                            <p>I create automation for my work most of the time and I usually used python for it</p>
+                        </div>
+                    </div>
+                    <div class="container container2">
+                        <div>
+                            <img src="./img/blender.png" alt="">
+                        </div>
+                        <div>
+                            <h2>3D and 2D Works</h2>
+                            <p>I tried learning 3D and 2D animation</p>
+                        </div>
+                    </div>
+                    <div class="container container3">
+                        <div>
+                            <video src="./vid/twodgame.mp4" autoplay muted loop playsinline>
+                                video unavailable!
+                            </video>
+                        </div>
+                        <div>
+                            <h2>Godot Game Engine</h2>
+                            <p>I tried creating a game using Godot</p>
+                        </div>
+                    </div>
+                    <div class="container container4">
+                        <div>
+                            <video src="./vid/sprite.mp4" autoplay muted loop playsinline>
+                                video unavailable!
+                            </video>
+                        </div>
+                        <div>
+                            <h2>PyGame</h2>
+                            <p>I tried creating sprites for my 2d game using PyGame</p>
+                        </div>
+                    </div>
+                    <div class="container container5">
+                        <div>
+                            <video src="./vid/draw.mp4" autoplay muted loop playsinline>
+                                video unavailable!
+                            </video>
+                        </div>
+                        <div>
+                            <h2>Drawing</h2>
+                            <p>I draw a lot in my spare time, before I started coding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="nav-container">
+            <div class="containers">
+                <div class="convince-section">
+                    <div>
+                        <h1>Lets work on you project Today</h1>
+                        <p>Hire a skilled Developer with years of experience in Programming. <br>Reach out to discuss your vision today.</p>
+                        <button onclick="window.location.href='./contacts.html'">Get Started</button>
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
-            <div class="footer-content">
-                <div class="upper-footer">
-                    <div class="hire-me">
-                        <h4>Hire me for your next <br> Big project!</h4>
-                        <h3>Contact me in any convenient way to discuss your idea.</h3>
-                        <ul>
-                            <li><a href="#">LINKEDIN</a></li>
-                            <li><a href="#">INSTAGRAM</a></li>
-                        </ul>
+            <div class="containers">
+
+                <div class="footer-content">
+                    <div class="upper-footer">
+                        <div class="hire-me">
+                            <h4>Hire me for your next <br> Big project!</h4>
+                            <h3>Contact me in any convenient way to discuss your idea.</h3>
+                            <ul>
+                                <li><a href="#">LINKEDIN</a></li>
+                                <li><a href="#">INSTAGRAM</a></li>
+                            </ul>
+                        </div>
+                        <div class="info-footer">
+                            <h4>INFORMATION</h4>
+                            <ul>
+                                <li>Name: Lord Drake B. Baza</li>
+                                <li>Date of Birth: 12/21/02</li>
+                                <li>Email: bazalorddrake@gmail.com</li>
+                                <li>Phone: +63 9214346839</li>
+                                <li>City: Cavite</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="info-footer">
-                        <h4>INFORMATION</h4>
-                        <ul>
-                            <li>Name: Lord Drake B. Baza</li>
-                            <li>Date of Birth: 12/21/02</li>
-                            <li>Email: bazalorddrake@gmail.com</li>
-                            <li>Phone: +63 9214346839</li>
-                            <li>City: Cavite</li>
-                        </ul>
+                    <hr>
+                    <div>
+                        <p>© Created By: Lord Drake B. Baza</p>
                     </div>
-                </div>
-                <hr>
-                <div>
-                    <p>© Created By: Lord Drake B. Baza</p>
-                    <p>All Right Reserve</p>
                 </div>
             </div>
         </footer>

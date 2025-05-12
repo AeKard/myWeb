@@ -20,7 +20,6 @@
 .burger{
     display: none;
 }
-
 body{
     background-color: #0e0e0e;
 }
@@ -29,6 +28,10 @@ html{
     font-size: 65.15%;
 }
 /*for Title or headers*/
+.containers{
+    max-width: 1568px;
+    margin: 0 auto;
+}
 h1{
     font-size: 2.5rem;
 }
@@ -52,10 +55,10 @@ p{
     font-size: 1rem;
 }
 
-main{
+/* main{
     max-width: 1480px;
     margin: 0 auto;
-}
+} */
 
 /*GLOBAL NAV*/
 header{
@@ -85,6 +88,7 @@ nav{
 .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .logo h1{
     padding-left: 10px;
@@ -125,7 +129,68 @@ nav ul li a:hover::after {
     opacity: 1;
     transform: translateX(0);
 }
+/*Info*/
+.nav-container{
+    background-color: #171717;
+}
+.info{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .info div  h1{
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+  }
+  .info div p{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  /*Footer*/
+footer{
+    background-color: #171717;
+    height: 100%;
+  }
 
+  .footer-content{
+    margin: 40px;
+  }
+  .upper-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+  .upper-footer > *{
+    margin: 20px;
+  } 
+  .hire-me h3, h4{
+    margin-bottom: 10px;
+  } 
+  .hire-me > h4{
+    font-size: 4rem;
+  } 
+  .hire-me ul{
+    display: flex;
+  } 
+  .hire-me ul li{
+    display: flex;
+    margin-right: 20px;
+  } 
+  
+  .info-footer h4{
+    margin-bottom: 10px;
+  } 
+  .info-footer ul li{
+    min-width: 200px;
+    margin-bottom: 10px;
+  } 
+  .footer-content div:nth-child(3){
+    text-align: center;
+  }
 /*-------------*/
 #side-container {
     position: fixed;
@@ -166,6 +231,9 @@ nav ul li a:hover::after {
     background-color: #086f01;
 }
 
+.info div:nth-child(1){
+  text-align: center;
+}
 /*For burger*/
 @media screen and (max-width: 900px) {
     nav ul{
@@ -176,4 +244,16 @@ nav ul li a:hover::after {
       font-size: 3rem;
       cursor: pointer;
     }
+}
+@media screen and (max-width: 800px) {
+  .upper-footer{
+    flex-direction: column;
   }
+  .info{
+    text-align: center;
+  }
+  .info div p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}

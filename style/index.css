@@ -15,13 +15,6 @@
 }
 /*-----*/
 /*HERO SECTION*/
-.hero-sect{
-  min-height: 620px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-}
 .name-desc{
   color: #086f01;
 }
@@ -87,8 +80,7 @@
   flex-direction: row;
   position: relative;
 
-  width: 90%;
-  max-width:px;
+  margin-top: 30px;
   height: 100px;
   margin-inline:auto ;
   mask-image: linear-gradient(
@@ -249,13 +241,6 @@ footer{
   min-width: 200px;
   margin-bottom: 10px;
 } 
-.footer-content div:nth-child(3){
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
-}
-
 .me-img{
   max-width: 30rem;
   margin-bottom: 30px;
